@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 @RestController
-public class AttachController {
+public class AttackController {
     @GetMapping("/attack")
     public String attack(@RequestParam(value = "url", required = false) String url) throws IOException {
         if (url != null && !url.isBlank()) {
